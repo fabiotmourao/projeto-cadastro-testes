@@ -28,7 +28,7 @@
         </div>
     </header>
 
-    <div class="container mt-5">
+    <div class="container-fluid mt-5 mx-auto px-5"> 
         <h2 class="mb-5">Lista para Controle</h2>
 
         <?php
@@ -63,6 +63,11 @@
                     <th>E-mail</th>
                     <th>Telefone</th>
                     <th>Cargo/Função</th>
+                    <th>CEP</th>
+                    <th>Logradouro</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -77,6 +82,11 @@
                     echo "<td>" . $user['email'] . "</td>";
                     echo "<td>" . $user['telephone'] . "</td>";
                     echo "<td>" . $user['office'] . "</td>";
+                    echo "<td>" . $user['cep'] . "</td>";
+                    echo "<td>" . $user['logradouro'] . "</td>";
+                    echo "<td>" . $user['bairro'] . "</td>";
+                    echo "<td>" . $user['cidade'] . "</td>";
+                    echo "<td>" . $user['estado'] . "</td>";
                     echo "<td>";
                     echo '<div class="btn-group" role="group">';
                     echo '<a href="edit.php?id=' . $user['id'] . '" class="btn btn-primary btn-sm m-1 ">Editar</a>';
